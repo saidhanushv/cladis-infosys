@@ -1,0 +1,123 @@
+/* LOGO APPEAR/DISAPPEAR ANIMATION  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+ body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ h1{
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+ }
+
+ .animation-container {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   animation: hide 5s;
+   animation-fill-mode: forwards;
+   animation-delay: 5s;
+   animation-fill-mode: forwards;
+}
+
+.logo-image{
+   position: absolute;
+   animation: hide 5s;
+   animation-fill-mode: forwards;
+   animation-delay: 5s;
+   top: -200px;
+   left: 50%;
+   transform: translateX(-50%);
+   animation: logo-drop 2s ease-in;
+   animation-fill-mode: forwards;
+}
+.logo-image img {
+   width: 200px;
+}
+
+
+
+.everything{
+   position: absolute;
+   animation: hide 5s;
+   animation-fill-mode: forwards;
+   animation-delay: 5s;
+   top: 0px;
+   left: 0%;
+   transform: translateX(-50%);
+   animation: everything-drop 2s ease-in;
+   animation-fill-mode: forwards;
+}
+.everything img{
+   width: 263.2%;
+   opacity: 0.5;
+}
+
+@keyframes everything-drop {
+   0% {
+       top: -200px;
+   }
+   100% {
+       top: 0px;
+   }
+}
+
+@keyframes logo-drop {
+   0% {
+       top: -200px;
+   }
+   100% {
+       top: 50px;
+   }
+}
+
+@keyframes hide {
+   0% {
+       opacity: 1;
+   }
+   100% {
+       opacity: 0;
+   }
+}
+
+::-webkit-scrollbar {
+   width: 0 !important;
+   display: none;
+}
+
+#explore-predict .overlap {
+   position: absolute;
+   z-index: 9999;
+}
+
+/* CLICK ANYWHERE PART  */
+#continue-text {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 20%;
+   padding-left: 7%;
+   font-size: 5em;  
+   font-weight: bold;
+   cursor: pointer;
+   font-family: 'Bree Serif', serif; /* this will use the Bree Serif font */
+   color: #afc0ca; /* this will make the text blue */
+   text-shadow: 2px 2px 4px #000000; /* this will add a black shadow to the text */
+   text-decoration: dashed;
+   text-transform: capitalize;
+ }
+
+ #continue-text:hover {
+   transform: scale(1.2); /* this will make the text 20% larger on hover */
+   transition: all 0.5s ease; /* this will make the transition to the new size smooth */
+}

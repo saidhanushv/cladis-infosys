@@ -1,0 +1,20 @@
+#continue-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%;
+    padding-left: 7%;
+    font-size: 5em;  
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif; /* this will use the Bree Serif font */
+    color: #afc0ca; /* this will make the text blue */
+    text-shadow: 2px 2px 4px #000000; /* this will add a black shadow to the text */
+    text-decoration: dashed;
+    text-transform: capitalize;
+  }
+
+  #continue-text:hover {
+    transform: scale(1.2); /* this will make the text 20% larger on hover */
+    transition: all 0.5s ease; /* this will make the transition to the new size smooth */
+}
